@@ -1,0 +1,68 @@
+Nesse Laboratório foi visto como criar um banco de Dados SQL 
+
+Segue os passos abaixo
+
+1. Acesse o Portal
+
+  - Vá até https://portal.azure.com
+  - Faça login com sua conta Microsoft (organizacional ou pessoal).
+
+2. Criar um Recurso
+
+  - No menu superior esquerdo, clique em “Criar um recurso”.
+  - Pesquise por "SQL Database" e clique em Criar.
+
+3. Configurar o Banco
+
+  - Assinatura: escolha a assinatura do Azure que você está usando.
+  - Grupo de Recursos: crie um novo ou escolha um já existente (um "container" de recursos).
+  - Nome do Banco: escolha um nome único (exemplo: dbMinhaAplicacao).
+
+Servidor:
+
+  - Clique em Criar novo servidor.
+
+Defina:
+
+  - Nome do servidor (ex.: servidor-teste123).
+  - Região (ex.: Brazil South para latência menor).
+  - Usuário administrador (ex.: adminsql).
+  - Senha segura.
+
+4. Escolher o Plano (Camada de Serviço)
+
+  - Azure SQL oferece DTU-based ou vCore-based (modelo mais novo).
+  - Para testes ou estudo, use Basic ou General Purpose.
+  - Você pode escolher Serverless se quiser que ele pause quando não estiver em uso (economiza custos).
+
+5. Configurações Adicionais
+
+  - Configuração de backup: já vem habilitado por padrão.
+  - Configuração de rede:
+  - Habilite Acesso público.
+  - Marque a opção Adicionar meu IP (assim seu computador terá permissão para conectar).
+
+6. Revisar e Criar
+
+  - Clique em Revisar + Criar.
+  - Revise suas escolhas.
+  - Clique em Criar.
+  - Aguarde a implantação terminar (leva alguns minutos).
+
+7. Conectar ao Banco
+
+  - Após criado, vá até o recurso do banco de dados no portal.
+  - Faça login com o usuário/senha criados.
+
+8. Criar Tabelas e Dados
+
+Conectado, você já pode rodar comandos SQL, como:
+
+CREATE TABLE Clientes (
+    Id INT PRIMARY KEY IDENTITY,
+    Nome NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL
+);
+
+INSERT INTO Clientes (Nome, Email)
+VALUES ('Xxxxxx', 'xxxxx@email.com');
