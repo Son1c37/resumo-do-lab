@@ -1,0 +1,12 @@
+Nesse laboratório foi discutido a criação das máquinas virtuais.
+Em alguns passos foi criando a uma máquina virtual, o passo a passo é descrito abaixo:
+1 - acesse o portal Azure.
+2 - vá nop menu ao lado e e clique em "Máquinas Vituais" ou digite "Máquinas virtuais" no Campo pesquisar.
+3 - Clique no botão "Criar" 
+4 - na aba básico configure sua assinatura, qual região vai ser alocada sua máquina, o grupo de recurso, nome da máquina e Sistema Operacional dela.
+5 - na aba disco sera configurado o armazenamento dela
+6 - na aba rede será configurado toda a parte de rede para conexão
+7 - na aba gerenciamento e avançado serão poucos ou nenhum ajuste
+8 na aba marcas será configurado uma marca para localização e gerenciamento da VM.
+9 - depois de toda a configuração a aba revisar+criar você apenas irá verificar se está tudo OK e criar a VM
+OBS.: irá demorar alguns segundos para a criação da máquina
